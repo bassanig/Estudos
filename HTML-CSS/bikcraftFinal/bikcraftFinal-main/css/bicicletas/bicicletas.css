@@ -1,0 +1,145 @@
+
+.bicicletas-bg {
+  padding: 80px 0;
+  background-color: var(--c12);
+}
+
+.bicicletas {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.bicicletas-item-bg {
+  background-color: var(--c11);
+  padding: 60px 0;
+  box-shadow: inset 400px 0 0 0 var(--w);
+}
+
+.bicicletas-item {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 40px;
+}
+
+.bicicletas-img {
+  position: relative;
+}
+
+.bicicletas-img span {
+  position: absolute;
+  top: 20px;
+  right: 0;
+  padding: 8px;
+  background-color: var(--c12);
+}
+
+.bicicletas-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.bicicletas-content h2 {
+  grid-column: 1/-1;
+}
+
+.bicicletas-content h2::before {
+  content: "";
+  margin: 4px;
+  width: 16px;
+  height: 8px;
+  background-color: var(--p1);
+  display: block;
+}
+
+.bicicletas-content p {
+  grid-column: 1/-1;
+}
+
+.bicicletas-content ul li::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  display: inline-block;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  margin-right: 4px;
+}
+
+.bicicletas-content ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+.bicicletas-content ul li:nth-child(1)::before {
+  background-image: url(../../media/icones/eletrica.svg);
+}
+
+.bicicletas-content ul li:nth-child(2)::before {
+  background-image: url(../../media/icones/carbono.svg);
+}
+
+.bicicletas-content ul li:nth-child(3)::before {
+  background-image: url(../../media/icones/velocidade.svg);
+}
+
+.bicicletas-content ul li:nth-child(4)::before {
+  background-image: url(../../media/icones/rastreador.svg);
+}
+
+.bicicletas-content a {
+  max-height: fit-content;
+  align-self: end;
+}
+
+
+@media (max-width: 800px) {
+  .bicicletas-bg {
+    padding: 40px 0;
+  }
+
+  .bicicletas {
+    gap: 0;
+  }
+
+  .bicicletas-item {
+    grid-template-columns: 1fr;
+  }
+
+  .bicicletas-content {
+    gap: 24px;
+  }
+
+  .bicicletas-content h2::before {
+    margin-bottom: 8px;
+  }
+
+  .bicicletas-content ul {
+    grid-column: 1/-1;
+  }
+
+  .bicicletas-content a {
+    grid-column: 1/-1;
+  }
+
+  .bicicletas-item-bg .bicicletas-item {
+    background-color: var(--c11);
+    padding: 32px;
+    color: var(--w);
+  }
+  
+  .bicicletas-item-bg .bicicletas-item ul li {
+    display: flex;
+    align-items: center;
+  }
+  
+  .bicicletas-item-bg .bicicletas-item ul li::before {
+    margin-right: 8px;
+  }
+
+  .bicicletas .bicicletas-item-bg {
+    background-color: var(--w);
+  }
+}

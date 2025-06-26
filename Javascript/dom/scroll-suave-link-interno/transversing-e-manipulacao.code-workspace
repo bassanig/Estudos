@@ -1,0 +1,16 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../eventos/css"
+		},
+		{
+			"path": "../eventos/img"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "transversing-e-manipulacao"
+	}
+}

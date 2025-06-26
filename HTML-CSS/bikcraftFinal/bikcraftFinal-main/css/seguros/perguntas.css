@@ -1,0 +1,73 @@
+.perguntas-bg {
+  background-color: var(--w);
+}
+
+.perguntas {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: var(--w);
+}
+
+.perguntas h2 {
+  margin-bottom: 60px;
+}
+
+.perguntas dl > div {
+  padding: 20px;
+  border-radius: 4px;
+}
+
+.perguntas dl > div:nth-child(odd) {
+  background: var(--c1);
+}
+
+.perguntas dt {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  gap: 8px;
+  align-items: center;
+  cursor: pointer;
+}
+
+.perguntas dt::before {
+  content: "";
+  display: inline-block;
+  width: 12px;
+  height: 8px;
+  background: var(--p1);
+}
+
+.perguntas dt::after {
+  content: "";
+  display: block;
+  width: 14px;
+  height: 6px;
+  background: url("../../media/icones/seta-abrir.svg") no-repeat right;
+  transition: 0.3s;
+  transform: rotate(180deg);
+}
+
+.perguntas dt.active::after {
+  transform: rotate(0deg);
+}
+
+.perguntas dd {
+  padding-left: 20px;
+  padding-top: 16px;
+  max-width: 80ch;
+  display: none;
+}
+
+.perguntas dd.active {
+  display: block;
+}
+
+@media (max-width: 800px) {
+  .perguntas {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+  .perguntas h2 {
+    margin-bottom: 40px;
+  }
+}

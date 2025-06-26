@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite App</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  </head>
+  <body class="bg-neutral-950 flex justify-center items-center accent-purple-400 *:font-poppins h-screen">
+    <div class="bg-purple-300  mx-auto grid justify-center p-8 rounded-lg gap-8">
+      <h1 class="text-4xl text-shadow-purple-900 font-bold font-poppins">Lista de Tarefas</h1>
+      <div>
+        <div class="flex flex-col bg-purple-800 rounded-lg p-4">
+          <input type="text" id="tarefa" class="js-tarefa bg-gradient-to-br from-purple-400 to-purple-500 rounded-lg focus:outline-none focus:border-yellow-400 focus:ring-2 focus:ring-yellow-400 mb-4 p-4 placeholder:text-xl" placeholder="Insira sua tarefa">
+          <button class="js-adicionar-btn rounded-full hover:bg-yellow-500 py-2 px-4 mb-8 bg-yellow-400 text-xl">Adicionar Tarefa</button>
+        </div>
+      </div>
+      <div class="flex flex-col bg-purple-800 backdrop-blur-2xl rounded-lg p-4 min-h-64">
+        <div class="bg-yellow-400 p-4 rounded-lg mb-4">
+          <h1 class="text-3xl ">Tarefas</h1>
+          <span class="text-sm text-balance js-unactive">Nenhuma tarefa criada por enquanto</span>
+        </div>
+        <div class="js-caixa-tarefas grid gap-4">
+
+        </div>
+      </div>
+    </div>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

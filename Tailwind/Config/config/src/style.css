@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+
+@theme {
+  --color-spotify: #1DB954;
+  --color-spotify-dark: #2aa210;
+  --color-spotify-light: #1db954;
+}
+
+@layer components {
+  .btn {
+    @apply text-white bg-red-400 border-2 border-red-900 font-bold p-4 outline-0 rounded-2xl mx-auto hover:bg-red-500
+  }
+}
+
+@utility text-shadow {
+  .text-shadow {
+    text-shadow: 2px 2px 4px blue;
+  }
+}

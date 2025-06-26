@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  --font-poppins: 'Poppins';
+}
+
+.unactive {
+  display: none;
+}
