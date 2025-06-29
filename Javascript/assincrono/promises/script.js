@@ -19,7 +19,6 @@
 // })
 // .finally(() => {
 //     console.log('acabou');
-    
 // })
 
 const login = new Promise((resolve) => {
